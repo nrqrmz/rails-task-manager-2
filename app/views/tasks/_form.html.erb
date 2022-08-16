@@ -10,10 +10,9 @@
   </div>
 
   <% unless f.object.new_record? %>
-    <div class="checkbox">
-      <label>
-        <%= f.check_box :completed %> Completed
-      </label>
+    <div class="form-group">
+      <%= f.check_box :completed %>
+      <%= f.label :completed %>
     </div>
   <% end %>
   <%= f.submit class: 'btn btn-primary mt-3' %>
